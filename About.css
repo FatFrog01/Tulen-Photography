@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* Barra Lateral */
+
+#task_bar{
+    background-color: white;
+    height: 100vh;
+    width: 90px;
+    position: fixed;
+}
+
+#options{
+    background-color: #0f0f0f;
+    height: 90px;
+    width: 90px;
+}
+
+#img_option{
+    position: absolute;
+    top: 2%;
+    left: 25%;
+}
+
+#social_media{
+    position: absolute;
+    top:41%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 255px;
+    width: 18px;
+}
+
+#pages_social_media{
+    position: absolute;
+    top:80%;
+    left: 18%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    width: 180px;
+}
+
+#box_option{
+    opacity: 0;
+    height: 90px;
+    width: 90px;
+    border: none;
+    z-index: 99;
+    position: absolute;
+}
+
+#box_option:checked+#pags{
+    visibility: visible;
+    transition: 0.5s;
+}
+
+#pags{
+    position: absolute;
+    top: 0%;
+    height: 100%;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    z-index: 90;
+    visibility: hidden;
+}
+
+#back{
+    background-color: #0f0f0f;
+    height: 90px;
+    width: 90px;
+}
+
+#img_back{
+    position: absolute;
+    top: 2.5%;
+    left: 8%;
+}
+
+#tulen{
+    background-color: #2916E0;
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    top: 0%;
+    left: 33.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tulen_att{
+    width: 180px;
+    height: 90px;
+    position: absolute;
+}
+
+#name_pages{
+    width: 110px;
+    height: 82%;
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_pages{
+    text-decoration: none;
+    font-size: 30px;
+    font-family:  "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #B2B2B2;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+#home:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#about:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#gallery:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#blog:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#contact:hover{
+    color: #2916E0;
+    transition: 0.3s;
+}
+
+#about{
+    color: #2916E0;
+}
+
+.copyright_text{
+    position: absolute;
+    top: 85%;
+    left: 14%;
+    text-align: center;
+    font-size: 19px;
+    color: #636363;
+}
+
+.ti-heart{
+    color: #e21010;
+    font-size: 16px;
+}
+
+#colorib{
+    text-decoration: none;
+    color: #B2B2B2;
+}
+
+#colorib:hover {
+    color: #2916E0;
+}
+
+/* Bloco Roxo */
+
+#bloco_roxo{
+    background-color: #2916E0;
+    height: 106vh;
+    width: 44.75%;
+    margin-left: 90px;
+    font-family: "montserrat", sans-serif;
+}
+
+#img_roxo{
+    text-align: center;
+    background-image: url(about-bg.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center center;
+    
+}
+
+#imghomem{
+    width: 515px;
+    height: 515px;
+    border-radius: 50%;
+    margin: 82px auto 50px;
+    background-image: url(about-bg.png);
+}
+
+#title{
+    color: white;
+    width: 20%;
+    height: 10vh;
+    font-size: 36px;
+    white-space: nowrap;
+    position: absolute;
+    top: 67%;
+    left: 12.5%;
+}
+
+#nome{
+    font-weight: bolder;
+    display: inline;
+}
+
+#text{
+    font-size: 15px;
+    width: fit-content;
+    position: absolute;
+    top: 79%;
+    left: 12.5%;
+    line-height: 1.8;
+    color: white;
+}
+
+#button_false{
+display: inline-block;
+    min-width: 160px;
+    padding: 9px 10px;
+    margin-bottom: 10px;
+    margin-right: 28px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    position: absolute;
+    top: 97%;
+    left: 12.5%;
+}
+
+#email{
+    display: inline-block;
+    font-style: italic;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+    position: absolute;
+    top: 98%;
+    left: 23%;
+}
+
+#about_text{
+width: 45%;
+height: 90vh;
+position: absolute;
+left: 53%;
+top: 0%;
+padding: 75px 0 50px;
+font-family: "montserrat",sans-serif;
+}
+
+#about_me{
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2916e0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#about_text p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+    color: #636363;
+}
+
+#my_skills{
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2916e0;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 48px 0px 8px;
+}
+
+.skills-circle {
+  position: absolute;
+  top: 86%;
+  left: 53%;
+  display: flex;
+  gap: 130px;
+  text-align: center;
+}
+
+.skill .circle {
+  --size: 100px;
+  --percent: 90;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: conic-gradient(#230ef2 calc(var(--percent) * 1%), #eaeaea 0%);
+  position: relative;
+}
+
+.skill .circle::before {
+  content: attr(data-percent);
+  position: absolute;
+  inset: 5%;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+
+.label {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #222;
+  font-family: "montserrat",sans-serif;
+  font-size: 20px;
+}
+
+.circle{
+    font-family: "montserrat", sans-serif;
+}
+
